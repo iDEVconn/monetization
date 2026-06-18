@@ -35,6 +35,15 @@ export {
   type UseCreditGateResult,
 } from './hooks/use-credit-gate';
 
+export { CreditWalletCard, type CreditWalletCardProps } from './components/CreditWalletCard';
+export { CreditLedgerList, type CreditLedgerListProps } from './components/CreditLedgerList';
+export { RevenueWalletCard, type RevenueWalletCardProps } from './components/RevenueWalletCard';
+export {
+  EntitlementsSummary,
+  type EntitlementsSummaryProps,
+} from './components/EntitlementsSummary';
+export { CreditGateDialog, type CreditGateDialogProps } from './components/CreditGateDialog';
+
 // Re-export the core types consumers touch in component props.
 export type {
   Balance,
