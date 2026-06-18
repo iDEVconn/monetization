@@ -56,6 +56,7 @@
     "prepublishOnly": "yarn build"
   },
   "peerDependencies": {
+    "@idevconn/isubscribe-widget-react": ">=2.5",
     "@nestjs/common": ">=10",
     "@nestjs/core": ">=10",
     "@tanstack/react-query": ">=5",
@@ -64,6 +65,9 @@
     "rxjs": ">=7"
   },
   "peerDependenciesMeta": {
+    "@idevconn/isubscribe-widget-react": {
+      "optional": true
+    },
     "@nestjs/common": {
       "optional": true
     },
@@ -84,6 +88,7 @@
     }
   },
   "devDependencies": {
+    "@idevconn/isubscribe-widget-react": "^2.5.1",
     "@nestjs/common": "^11.0.0",
     "@nestjs/core": "^11.0.0",
     "@nestjs/testing": "^11.0.0",

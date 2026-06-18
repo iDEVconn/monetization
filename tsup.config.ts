@@ -25,6 +25,7 @@ export default defineConfig({
     'react/jsx-runtime',
     'react-dom',
     '@tanstack/react-query',
+    '@idevconn/isubscribe-widget-react',
     '@idevconn/monetization/core',
   ],
 });

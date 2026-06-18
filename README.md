@@ -13,7 +13,7 @@ a customer app consumes the platform with minimal code.
 |-------------|------|-------|
 | `@idevconn/monetization/core` | transport-agnostic API client, types, cache, circuit breaker, `WalletStore` | ✅ shipped (hosted mode) |
 | `@idevconn/monetization/nest` | NestJS module, `@ConsumesCredits` decorator, interceptor, job-settlement | ✅ shipped |
-| `@idevconn/monetization/react` | provider, hooks, + cards/ledger/gate components | ✅ shipped (`PlansWidget`/`BuyCreditsDialog` — compose external widget pkg — next) |
+| `@idevconn/monetization/react` | provider, hooks, cards/ledger/gate + `PlansWidget`/`BuyCreditsDialog` | ✅ shipped |
 
 ## `/core`
 

@@ -568,10 +568,21 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@idevconn/isubscribe-widget-react@npm:^2.5.1":
+  version: 2.5.1
+  resolution: "@idevconn/isubscribe-widget-react@npm:2.5.1"
+  peerDependencies:
+    react: ">=18.x"
+    react-dom: ">=18.x"
+  checksum: 10c0/3781cce905940c5942a394fc421b3f6d60b628badb624c06dfa62be53848795478b20ad7374ac4c587400082d6be5768f335aad53b470c1f52c2ee9a89cf67d1
+  languageName: node
+  linkType: hard
+
 "@idevconn/monetization@workspace:.":
   version: 0.0.0-use.local
   resolution: "@idevconn/monetization@workspace:."
   dependencies:
+    "@idevconn/isubscribe-widget-react": "npm:^2.5.1"
     "@nestjs/common": "npm:^11.0.0"
     "@nestjs/core": "npm:^11.0.0"
     "@nestjs/testing": "npm:^11.0.0"
@@ -592,6 +603,7 @@ __metadata:
     typescript: "npm:^5.7.2"
     vitest: "npm:^2.1.8"
   peerDependencies:
+    "@idevconn/isubscribe-widget-react": ">=2.5"
     "@nestjs/common": ">=10"
     "@nestjs/core": ">=10"
     "@tanstack/react-query": ">=5"
@@ -599,6 +611,8 @@ __metadata:
     reflect-metadata: ">=0.1.13"
     rxjs: ">=7"
   peerDependenciesMeta:
+    "@idevconn/isubscribe-widget-react":
+      optional: true
     "@nestjs/common":
       optional: true
     "@nestjs/core":

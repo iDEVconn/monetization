@@ -43,6 +43,12 @@ export {
   type EntitlementsSummaryProps,
 } from './components/EntitlementsSummary';
 export { CreditGateDialog, type CreditGateDialogProps } from './components/CreditGateDialog';
+export { PlansWidget, type PlansWidgetProps } from './components/PlansWidget';
+export {
+  BuyCreditsDialog,
+  type BuyCreditsDialogProps,
+  type CreditPack,
+} from './components/BuyCreditsDialog';
 
 // Re-export the core types consumers touch in component props.
 export type {
