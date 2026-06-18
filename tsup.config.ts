@@ -4,6 +4,7 @@ export default defineConfig({
   entry: {
     'core/index': 'src/core/index.ts',
     'nest/index': 'src/nest/index.ts',
+    'react/index': 'src/react/index.ts',
   },
   format: ['esm', 'cjs'],
   dts: true,
@@ -20,6 +21,10 @@ export default defineConfig({
     'reflect-metadata',
     'rxjs',
     'bullmq',
+    'react',
+    'react/jsx-runtime',
+    'react-dom',
+    '@tanstack/react-query',
     '@idevconn/monetization/core',
   ],
 });

@@ -12,8 +12,8 @@ a customer app consumes the platform with minimal code.
 | Entry point | What | State |
 |-------------|------|-------|
 | `@idevconn/monetization/core` | transport-agnostic API client, types, cache, circuit breaker, `WalletStore` | ✅ shipped (hosted mode) |
-| `@idevconn/monetization/nest` | NestJS module, `@ConsumesCredits` decorator, interceptor, BullMQ glue | ⏳ planned |
-| `@idevconn/monetization/react` | provider, hooks, drop-in components | ⏳ planned |
+| `@idevconn/monetization/nest` | NestJS module, `@ConsumesCredits` decorator, interceptor, job-settlement | ✅ shipped |
+| `@idevconn/monetization/react` | provider + read-only hooks (`useCreditWallet`, `useCreditGate`, `useEntitlements`, `useRevenueWallet`) | ✅ hooks shipped; styled components next |
 
 ## `/core`
 
