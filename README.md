@@ -21,7 +21,7 @@ a customer app consumes the platform with minimal code.
 import { createMonetizationCore } from '@idevconn/monetization/core';
 
 const { client, store } = createMonetizationCore({
-  baseUrl: 'https://api.isubscribe.me/api/v1',
+  baseUrl: 'https://isubscribe.me/api/v1/public',
   apiKey: process.env.ISUBSCRIBE_API_KEY,   // server-to-server
   fallback: 'fail-closed',                  // or 'fail-open' for UX-first gating
   cache: { balanceTtlMs: 10_000 },

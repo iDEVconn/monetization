@@ -39,7 +39,7 @@ export interface CoreClientConfig {
   apiKey?: string;
   /** Short-lived bearer user token for read-only frontend access. */
   getUserToken?: () => string | Promise<string>;
-  /** Base URL of the SaaS API, e.g. https://api.isubscribe.me/api/v1. */
+  /** Base URL of the SaaS API, e.g. https://isubscribe.me/api/v1/public. */
   baseUrl: string;
   /** Request timeout in ms. Default 10_000. */
   timeoutMs?: number;

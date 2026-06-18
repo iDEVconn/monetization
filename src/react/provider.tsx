@@ -10,7 +10,7 @@ import { MonetizationContext, type MonetizationContextValue } from './context';
 
 export interface MonetizationProviderProps {
   children: ReactNode;
-  /** SaaS API base URL, e.g. https://api.isubscribe.me/api/v1. */
+  /** SaaS API base URL, e.g. https://isubscribe.me/api/v1/public. */
   baseUrl: string;
   /** Current user id; hooks default to it. */
   userId: string;

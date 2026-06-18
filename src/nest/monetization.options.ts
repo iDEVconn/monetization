@@ -12,7 +12,7 @@ export type MonetizationMode = 'hosted' | 'local' | 'hybrid';
 
 export interface MonetizationModuleOptions {
   apiKey: string;
-  /** SaaS base URL, e.g. https://api.isubscribe.me/api/v1. Defaults to prod. */
+  /** SaaS public API-key base URL. Defaults to prod. */
   baseUrl?: string;
   mode?: MonetizationMode;
   fallback?: FallbackPolicy;
@@ -29,7 +29,7 @@ export interface MonetizationModuleOptions {
 }
 
 /** Default production API base. */
-export const DEFAULT_BASE_URL = 'https://api.isubscribe.me/api/v1';
+export const DEFAULT_BASE_URL = 'https://isubscribe.me/api/v1/public';
 
 export interface MonetizationOptionsFactory {
   createMonetizationOptions():
