@@ -15,7 +15,10 @@
     "forceConsistentCasingInFileNames": true,
     "skipLibCheck": true,
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
+    // No emitDecoratorMetadata: every NestJS injection uses an explicit @Inject()
+    // token, so design:paramtypes metadata is never needed. Keeping it on only
+    // made tsup/esbuild warn about a missing @swc/core plugin on every build.
+    "emitDecoratorMetadata": false,
     "verbatimModuleSyntax": true,
     "isolatedModules": true,
     "resolveJsonModule": true,
