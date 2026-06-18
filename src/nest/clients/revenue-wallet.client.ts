@@ -19,8 +19,8 @@ export class RevenueWalletClient {
     return this.client.recordSale(input);
   }
 
-  markAvailable(referenceId: string): Promise<RecordSaleResult> {
-    return this.client.markSaleAvailable(referenceId);
+  markAvailable(sellerId: string, referenceId: string): Promise<RecordSaleResult> {
+    return this.client.markSaleAvailable(sellerId, referenceId);
   }
 
   getBalance(userId: string): Promise<RevenueBalance> {

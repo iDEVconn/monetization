@@ -148,12 +148,13 @@ export class MonetizationClient {
   }
 
   async markSaleAvailable(
+    sellerId: string,
     referenceId: string,
     idempotencyKey: string = newIdempotencyKey(),
   ): Promise<RecordSaleResult> {
     const { data } = await this.http.request<RecordSaleResult>('/revenue/mark-available', {
       method: 'POST',
-      body: { referenceId },
+      body: { sellerId, referenceId },
       idempotencyKey,
     });
     return data;
