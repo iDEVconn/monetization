@@ -1,0 +1,20 @@
+node_modules/
+dist/
+coverage/
+
+# Yarn (Berry, node-modules linker)
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+*.log
+.DS_Store
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+*.tsbuildinfo
