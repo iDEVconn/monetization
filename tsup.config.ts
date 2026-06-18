@@ -3,6 +3,7 @@ import { defineConfig } from 'tsup';
 export default defineConfig({
   entry: {
     'core/index': 'src/core/index.ts',
+    'nest/index': 'src/nest/index.ts',
   },
   format: ['esm', 'cjs'],
   dts: true,
@@ -10,6 +11,15 @@ export default defineConfig({
   clean: true,
   treeshake: true,
   target: 'es2022',
-  // /core is transport-agnostic — no framework deps to externalize yet.
-  // /nest and /react entries (added later) will externalize their peer deps.
+  // Framework deps stay external — they are peers, never bundled.
+  // /core is also external for the /nest entry: it imports the sibling subpath
+  // at runtime (resolved via the package exports map) rather than re-bundling it.
+  external: [
+    '@nestjs/common',
+    '@nestjs/core',
+    'reflect-metadata',
+    'rxjs',
+    'bullmq',
+    '@idevconn/monetization/core',
+  ],
 });
